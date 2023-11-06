@@ -7,7 +7,7 @@ function Rect(x, y, width, height) {
   this.height = height;
 }
 
-Rect.prototype.toString = function () {
+Rect.prototype.toString = function() {
   return JSON.stringify(this);
 };
 
@@ -33,7 +33,7 @@ Square.prototype.constructor = Square;
 // const util = require('util');
 // util.inherits(Square, Rect);
 
-Square.prototype.move = function (x, y) {
+Square.prototype.move = function(x, y) {
   this.x += x;
   this.y += y;
 };

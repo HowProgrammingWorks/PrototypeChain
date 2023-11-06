@@ -5,17 +5,17 @@ function Point(x, y) {
   this.y = y;
 }
 
-Point.from = function (obj) {
+Point.from = function(obj) {
   const { x, y } = obj;
   return new Point(x, y);
 };
 
-Point.prototype.move = function (x, y) {
+Point.prototype.move = function(x, y) {
   this.x += x;
   this.y += y;
 };
 
-Point.prototype.toString = function () {
+Point.prototype.toString = function() {
   return `[${this.x}, ${this.y}]`;
 };
 
