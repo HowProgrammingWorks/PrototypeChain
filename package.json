@@ -5,10 +5,14 @@
   "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "lint": "eslint . && prettier -c \"**/*.js\"",
+    "fix": "eslint . --fix && prettier --write \"**/*.js\"",
     "test": "eslint ./Exercises; hpw"
   },
   "dependencies": {
-    "eslint": "^8.53.0",
-    "hpw": "^0.2.2"
+    "hpw": "^0.2.2",
+    "eslint": "^9.39.1",
+    "eslint-config-metarhia": "^9.1.3",
+    "prettier": "^3.6.2"
   }
 }
